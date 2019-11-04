@@ -1,4 +1,4 @@
-package us.cnlist.customers;
+package us.cnlist.objects.geo;
 
 import java.io.Serializable;
 
@@ -13,6 +13,8 @@ public class Address implements Serializable {
     private String street;
     private String zipCode;
 
+    private boolean primary;
+    private boolean shipping;
 
     public Address(){
 
@@ -80,5 +82,21 @@ public class Address implements Serializable {
 
     public void setZipCode(String zipCode) {
         this.zipCode = zipCode;
+    }
+
+    public void setPrimary(boolean primary) {
+        this.primary = primary;
+    }
+
+    public boolean isPrimary() {
+        return primary;
+    }
+
+    public void setShipping(boolean shipping) {
+        this.shipping = shipping;
+    }
+
+    public boolean isShipping() {
+        return shipping;
     }
 }
