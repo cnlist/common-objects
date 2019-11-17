@@ -4,9 +4,10 @@ import java.io.Serializable;
 
 public class Address implements Serializable {
 
-    private String city;
-    private String country;
-    private String province;
+
+    private GeoObject city;
+    private GeoObject country;
+    private GeoObject province;
     private String houseNumber;
     private String postBox;
     private String apartment;
@@ -20,27 +21,27 @@ public class Address implements Serializable {
 
     }
 
-    public String getCity() {
+    public GeoObject getCity() {
         return city;
     }
 
-    public void setCity(String city) {
+    public void setCity(GeoObject city) {
         this.city = city;
     }
 
-    public String getCountry() {
+    public GeoObject getCountry() {
         return country;
     }
 
-    public void setCountry(String country) {
+    public void setCountry(GeoObject country) {
         this.country = country;
     }
 
-    public String getProvince() {
+    public GeoObject getProvince() {
         return province;
     }
 
-    public void setProvince(String province) {
+    public void setProvince(GeoObject province) {
         this.province = province;
     }
 
