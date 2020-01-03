@@ -6,7 +6,7 @@ import java.io.Serializable;
 import java.util.Set;
 
 public class Citizen implements Serializable {
-
+    private Long id;
     private String firstName;
     private String secondName;
     private String middleName;
@@ -16,6 +16,7 @@ public class Citizen implements Serializable {
     private String primaryMobilePhone;
     private String primaryEmail;
     private String description;
+    private boolean male;
 
 
     public Citizen(){}
@@ -90,5 +91,21 @@ public class Citizen implements Serializable {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public void setMale(boolean male) {
+        this.male = male;
+    }
+
+    public boolean isMale() {
+        return male;
     }
 }
