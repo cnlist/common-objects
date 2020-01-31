@@ -9,5 +9,7 @@ import java.io.Serializable;
 public class GeoObject implements Serializable {
     private Long id;
     private String name;
+    private String regionName;
+    private String countryName;
 
 }
