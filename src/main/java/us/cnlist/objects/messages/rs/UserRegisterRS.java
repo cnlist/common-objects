@@ -10,7 +10,7 @@ public class UserRegisterRS {
     private RegistrationResult result;
     private RegistrationErrorType errorType;
 
-    public UserRegisterRS(){
+    public UserRegisterRS() {
 
     }
 
@@ -26,12 +26,12 @@ public class UserRegisterRS {
         return result;
     }
 
-    public RegistrationErrorType getErrorType() {
-        return errorType;
-    }
-
     public void setResult(RegistrationResult result) {
         this.result = result;
+    }
+
+    public RegistrationErrorType getErrorType() {
+        return errorType;
     }
 
     public void setErrorType(RegistrationErrorType errorType) {

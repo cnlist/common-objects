@@ -8,10 +8,6 @@ import java.io.Serializable;
 public class UserRegisterRQ extends CommonRq implements Serializable {
     private User user;
 
-    public UserRegisterRQ() {
-
-    }
-
     public User getUser() {
         return user;
     }

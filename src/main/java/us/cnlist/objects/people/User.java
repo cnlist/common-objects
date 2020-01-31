@@ -7,7 +7,9 @@ public class User implements Serializable {
     private String login;
     private String password;
     private UserProfile profile;
-    public User(){}
+
+    public User() {
+    }
 
     public String getLogin() {
         return login;

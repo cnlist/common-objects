@@ -19,7 +19,8 @@ public class Citizen implements Serializable {
     private boolean male;
 
 
-    public Citizen(){}
+    public Citizen() {
+    }
 
     public String getFirstName() {
         return firstName;
@@ -101,11 +102,11 @@ public class Citizen implements Serializable {
         this.id = id;
     }
 
-    public void setMale(boolean male) {
-        this.male = male;
-    }
-
     public boolean isMale() {
         return male;
+    }
+
+    public void setMale(boolean male) {
+        this.male = male;
     }
 }

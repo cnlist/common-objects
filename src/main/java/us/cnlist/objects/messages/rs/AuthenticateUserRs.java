@@ -7,7 +7,7 @@ public class AuthenticateUserRs {
     private boolean authenticated;
     private User user;
 
-    public AuthenticateUserRs(){
+    public AuthenticateUserRs() {
 
     }
 

@@ -1,16 +1,17 @@
 package us.cnlist.objects.contacts;
 
+
 public class Contact {
 
     private Long id;
     private ContactType contactType;
     private String value;
 
-    public Contact(){
+    public Contact() {
 
     }
 
-    public Contact(ContactType type, String value){
+    public Contact(ContactType type, String value) {
         this.contactType = type;
         this.value = value;
     }

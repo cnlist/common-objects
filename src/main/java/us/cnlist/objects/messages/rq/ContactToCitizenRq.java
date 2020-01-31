@@ -20,12 +20,12 @@ public class ContactToCitizenRq {
         return citizen;
     }
 
-    public Contact getContact() {
-        return contact;
-    }
-
     public void setCitizen(Citizen citizen) {
         this.citizen = citizen;
+    }
+
+    public Contact getContact() {
+        return contact;
     }
 
     public void setContact(Contact contact) {

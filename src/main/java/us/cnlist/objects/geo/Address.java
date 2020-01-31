@@ -17,7 +17,7 @@ public class Address implements Serializable {
     private boolean primary;
     private boolean shipping;
 
-    public Address(){
+    public Address() {
 
     }
 
@@ -85,19 +85,19 @@ public class Address implements Serializable {
         this.zipCode = zipCode;
     }
 
-    public void setPrimary(boolean primary) {
-        this.primary = primary;
-    }
-
     public boolean isPrimary() {
         return primary;
     }
 
-    public void setShipping(boolean shipping) {
-        this.shipping = shipping;
+    public void setPrimary(boolean primary) {
+        this.primary = primary;
     }
 
     public boolean isShipping() {
         return shipping;
+    }
+
+    public void setShipping(boolean shipping) {
+        this.shipping = shipping;
     }
 }
