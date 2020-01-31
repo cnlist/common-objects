@@ -1,33 +1,17 @@
 package us.cnlist.objects.messages.rq;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 import us.cnlist.objects.messages.CommonRq;
 
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class AuthenticateUserRQ extends CommonRq {
 
     private String username;
     private String password;
 
-    public AuthenticateUserRQ() {
-    }
 
-    public AuthenticateUserRQ(String username, String password) {
-        this.username = username;
-        this.password = password;
-    }
-
-    public String getUsername() {
-        return username;
-    }
-
-    public void setUsername(String username) {
-        this.username = username;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
 }

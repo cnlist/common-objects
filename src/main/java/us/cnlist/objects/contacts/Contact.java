@@ -1,6 +1,8 @@
 package us.cnlist.objects.contacts;
 
+import lombok.Data;
 
+@Data
 public class Contact {
 
     private Long id;
@@ -16,27 +18,4 @@ public class Contact {
         this.value = value;
     }
 
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public ContactType getContactType() {
-        return contactType;
-    }
-
-    public void setContactType(ContactType contactType) {
-        this.contactType = contactType;
-    }
-
-    public String getValue() {
-        return value;
-    }
-
-    public void setValue(String value) {
-        this.value = value;
-    }
 }

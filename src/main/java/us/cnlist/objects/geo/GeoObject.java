@@ -1,27 +1,13 @@
 package us.cnlist.objects.geo;
 
+import lombok.Data;
+
 import java.io.Serializable;
 
+@SuppressWarnings("WeakerAccess")
+@Data
 public class GeoObject implements Serializable {
     private Long id;
     private String name;
 
-    public GeoObject() {
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
 }

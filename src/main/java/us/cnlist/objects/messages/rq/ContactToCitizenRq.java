@@ -1,34 +1,17 @@
 package us.cnlist.objects.messages.rq;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 import us.cnlist.objects.contacts.Contact;
 import us.cnlist.objects.people.Citizen;
 
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class ContactToCitizenRq {
 
     private Citizen citizen;
     private Contact contact;
 
-    public ContactToCitizenRq(Citizen citizen, Contact contact) {
-        this.citizen = citizen;
-        this.contact = contact;
-    }
-
-    public ContactToCitizenRq() {
-    }
-
-    public Citizen getCitizen() {
-        return citizen;
-    }
-
-    public void setCitizen(Citizen citizen) {
-        this.citizen = citizen;
-    }
-
-    public Contact getContact() {
-        return contact;
-    }
-
-    public void setContact(Contact contact) {
-        this.contact = contact;
-    }
 }
