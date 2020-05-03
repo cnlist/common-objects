@@ -12,7 +12,7 @@
     <packaging>jar</packaging>
     <groupId>us.cnlist</groupId>
     <artifactId>common-objects</artifactId>
-    <version>0.1.1</version>
+    <version>0.1.2</version>
     <distributionManagement>
         <repository>
             <id>nexus-snapshots</id>
