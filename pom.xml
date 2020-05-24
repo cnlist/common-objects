@@ -12,7 +12,7 @@
     <packaging>jar</packaging>
     <groupId>us.cnlist</groupId>
     <artifactId>common-objects</artifactId>
-    <version>0.1.2-TEST-RP-SNAPSHOT</version>
+    <version>0.1.3-SNAPSHOT</version>
     <distributionManagement>
         <repository>
             <id>cnlist-releases</id>
@@ -23,6 +23,26 @@
             <url>http://194.58.103.128:8081/repository/cnlist-snapshots</url>
         </snapshotRepository>
     </distributionManagement>
+    <repositories>
+        <repository>
+            <id>primefaces</id>
+            <url>http://194.58.103.128:8081/repository/primefaces/</url>
+        </repository>
+        <repository>
+            <id>cnlist-releases</id>
+            <url>http://194.58.103.128:8081/repository/cnlist-releases</url>
+            <releases/>
+        </repository>
+        <repository>
+            <id>cnlist-snapshots</id>
+            <url>http://194.58.103.128:8081/repository/cnlist-snapshots</url>
+            <snapshots/>
+        </repository>
+        <repository>
+            <id>central</id>
+            <url>http://194.58.103.128:8081/repository/maven-central/</url>
+        </repository>
+    </repositories>
     <dependencies>
         <dependency>
             <groupId>org.projectlombok</groupId>
@@ -77,24 +97,6 @@
                     </execution>
                 </executions>
             </plugin>
-            <!--plugin>
-                <groupId>org.sonatype.plugins</groupId>
-                <artifactId>nexus-staging-maven-plugin</artifactId>
-                <version>1.5.1</version>
-                <executions>
-                    <execution>
-                        <id>default-deploy</id>
-                        <phase>deploy</phase>
-                        <goals>
-                            <goal>deploy</goal>
-                        </goals>
-                    </execution>
-                </executions>
-                <configuration>
-                    <serverId>nexus</serverId>
-                    <nexusUrl>http://194.58.103.128:8081</nexusUrl>
-                </configuration>
-            </plugin-->
         </plugins>
     </build>
 
