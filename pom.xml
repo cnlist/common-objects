@@ -6,8 +6,8 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.2.0.RELEASE</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <version>2.3.4.RELEASE</version>
+        <relativePath/>
     </parent>
     <packaging>jar</packaging>
     <groupId>us.cnlist</groupId>
@@ -16,42 +16,46 @@
     <distributionManagement>
         <repository>
             <id>cnlist-releases</id>
-            <url>http://194.58.103.128:8081/repository/cnlist-releases</url>
+            <url>${cnlist.nexus.url}/cnlist-releases/</url>
         </repository>
         <snapshotRepository>
-            <id>cnlist-snapshots</id>
-            <url>http://194.58.103.128:8081/repository/cnlist-snapshots</url>
+            <id>cnlist-dev</id>
+            <url>${cnlist.nexus.url}/cnlist-snapshots/</url>
         </snapshotRepository>
     </distributionManagement>
     <repositories>
         <repository>
-            <id>primefaces</id>
-            <url>http://194.58.103.128:8081/repository/primefaces/</url>
-        </repository>
-        <repository>
             <id>cnlist-releases</id>
-            <url>http://194.58.103.128:8081/repository/cnlist-releases</url>
+            <url>http://srv0.cnlist.us:8081/cnlist-releases/</url>
             <releases/>
         </repository>
         <repository>
-            <id>cnlist-snapshots</id>
-            <url>http://194.58.103.128:8081/repository/cnlist-snapshots</url>
+            <id>cnlist-dev</id>
+            <url>http://srv0.cnlist.us:8081/cnlist-snapshots/</url>
             <snapshots/>
         </repository>
         <repository>
             <id>central</id>
-            <url>http://194.58.103.128:8081/repository/maven-central/</url>
+            <url>http://srv0.cnlist.us:8081/repository/maven-central/</url>
+            <layout>default</layout>
+        </repository>
+        <repository>
+            <id>primefaces</id>
+            <url>http://srv0.cnlist.us:8081/primefaces/</url>
+            <layout>default</layout>
         </repository>
     </repositories>
     <dependencies>
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>1.18.10</version>
+            <version>1.18.8</version>
+
         </dependency>
         <dependency>
             <groupId>org.postgresql</groupId>
             <artifactId>postgresql</artifactId>
+            <version>42.2.18</version>
             <scope>runtime</scope>
         </dependency>
         <dependency>
@@ -86,7 +90,7 @@
             </plugin>
             <plugin>
                 <artifactId>maven-deploy-plugin</artifactId>
-                <version>2.8.1</version>
+                <version>2.8.2</version>
                 <executions>
                     <execution>
                         <id>default-deploy</id>
