@@ -16,11 +16,11 @@
     <distributionManagement>
         <repository>
             <id>cnlist-releases</id>
-            <url>${cnlist.nexus.url}/cnlist-releases/</url>
+            <url>http://srv0.cnlist.us:8081/cnlist-releases/</url>
         </repository>
         <snapshotRepository>
             <id>cnlist-dev</id>
-            <url>${cnlist.nexus.url}/cnlist-snapshots/</url>
+            <url>http://srv0.cnlist.us:8081/cnlist-snapshots/</url>
         </snapshotRepository>
     </distributionManagement>
     <repositories>
